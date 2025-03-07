@@ -1,46 +1,87 @@
-# Desafio de programação para vaga de desenvolvedor front end
-
-O intuito deste teste é avaliar seus conhecimentos técnicos e boas práticas em código. O teste consiste em criar uma página simples com consumo de API.
-
-Siga os requisitos obrigatórios, mas não se atenha somente a eles. Use sua criatividade!
+<<<<<<< HEAD
+# ManchesterWeather - Projeto front end
+=======
+# MchesterWeather - Projeto front end
+>>>>>>> d775cc7 (exemplo .env)
 
 # Descrição do projeto
 
-Construa uma página simples que consuma uma API de previsão do tempo e retorne as informações de temperatura atual, mínima e máxima para o dia (ºC).
+Construção de uma aplicação web de previsão do tempo, com foco no front-end. O site permite você buscar cidades com as informações climáticas, como também favoritar as cidades que desejar. Existem três rotas, são elas:
 
-Crie uma interface que aceite o input de uma cidade, liste as cidades que se enquadrem na sua busca, e ao selecioná-la, retorne as informações solicitadas.
+  - Busca:
+    - Permite selecionar a cidade desejada
 
-Você pode utilizar a API que seja mais conveniente para o resgate das informações. Como sugestão, o [OpenWeatherMap](https://openweathermap.org/api) é uma escolha que satisfaz os requisitos do desafio.
+  - Dashboard:
+    - Visualiza a temperatura atual, mínima e máxima do dia.
+    - Ícones e fundo representando a situação atual do dia (nublado, ensolarado, chuvoso,...)
+    - Dia
+    - Detalhes como umidade, vento, probabilidade de chuva...
+    - Próximos 5 dias
+    - Possibilidade de favoritar a cidade
 
+  - Favorites:
+    - Lista das cidades favoritadas
+    - Possibilidade de excluir uma cidade.
+  
+---
 
-**Requisitos Obrigatórios:**
+## Tecnologias Utilizadas
 
-1. Utilizar React com Material UI ou Chakra UI.
-2. Utilizar tipografia Montserrat.
-3. Possuir as versões desktop e mobile. É fortemente encorajado que seja mobile first.
-4. Utilizar apenas bibliotecas livres ou gratuitas, e deve ser implementada apenas com Javascript e Typescript.
-5. Utilizar testes (React Testing Lib, Cypress, etc).
-6. Conter o arquivo README.md, descrevendo detalhadamente o projeto e seu setup. O arquivo deve identificar todas as etapas e dependências para a instância da aplicação.
+- **Linguagens e Frameworks:**
+  - React com TypeScript (com foco em mobile first)
+  - Material UI
+  - Axios para consumo de API
 
-**Sua aplicação web não precisa:**
+- **Testes:**
+  - React Testing Library & Jest
 
-1. Lidar com autenticação ou autorização interna (pontos extras se ela fizer, mais pontos extras se a autenticação for feita via OAuth).
+- **API de Clima:**
+  - [OpenWeatherMap API](https://openweathermap.org/api)
 
-**Bônus na Avaliação!**
+---
 
-1. Crie uma lista persistente de cidades favoritas, preferencialmente já apresentando algumas das informações de previsão do tempo em tela ao acessar a página.
-2. Traga mais informações: precipitação, vento, previsão para os próximos dias... Pense também na interface para apresentar estas informações.
-3. Hospede sua aplicação em algum serviço gratuito (Vercel, AWS Free Tier, etc).
-4. Crie layouts dinâmicos baseados na localização (por exemplo, backgrounds de acordo com o tempo atual, ou modo diurno/noturno baseado no horário de acesso à página). Solte sua criatividade e mostre um pouco das suas habilidades de UI/UX.
+### Passos para Configuração
 
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/MatheusBusarello/desafio-dev-frontend
+   cd desafio-dev-frontend
+   ```
 
-# Instruções de entrega do desafio
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
 
-1. Faça um fork deste projeto para sua conta no Github.
-2. Em seguida, implemente o projeto neste repositório, seguindo suas especificações.
-3. Por fim, envie o link do seu projeto para seu contato Manchester Investimentos com cópia para rh@manchesterinvest.com.br.
+3. Configure a chave da API:
+   - Copie o arquivo `.env.exemple` altere a descrição para `.env`.
+   - Crie uma conta no [OpenWeatherMap API](https://openweathermap.org/api) e crie uma chave em `Minhas chaves API`
+   - Acrescente esta chave no "VITE_WEATHER_APP_API"
 
-# Referência
+4. Execute o projeto:
+   ```bash
+   npm start
+   ```
+---
 
-Este teste técnico foi baseado no seguinte desafio: 
-https://github.com/1STi/desafio-frontend/
+## Testes
+
+1. Para rodar os testes automatizados:
+   ```bash
+   npm test
+   ```
+2. Testes incluídos:
+   - Verificação da renderização da busca pelas cidades;
+   - Verifica a a etapa de favoritar uma cidade.
+
+---
+
+## Deploy
+
+Deploy no Vercel. Link:
+https://machesterweather.vercel.app/
+
+# Figma
+
+Para criação prévia do projeto, foi utilizado o figma:
+https://www.figma.com/design/Y7Ib8jBrFNzCGNYo1GOiQj/Manchester-Weather?node-id=0-1&p=f&t=2EhcH9cVal2M0XAx-0

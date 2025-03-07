@@ -1,0 +1,51 @@
+.favorites {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.favorites header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.return-page {
+  color: white;
+}
+
+.return-page:hover {
+  color: var(--gray-200);
+}
+
+.favorites ul {
+  list-style: none;
+  padding: 0;
+}
+
+.favorites li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--gray-800);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.city-favorite {
+  text-decoration: none;
+  color: var(--gray-200);
+  font-weight: bold;
+}
+
+.cancelFavorite {
+  cursor: pointer;
+  color: var(--gray-400);
+  transition: 0.4s;
+}
+
+.cancelFavorite:hover {
+  color: var(--gray-200);
+}
