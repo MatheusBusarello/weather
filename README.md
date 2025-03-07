@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # ManchesterWeather - Projeto front end
-=======
-# MchesterWeather - Projeto front end
->>>>>>> d775cc7 (exemplo .env)
 
 # Descrição do projeto
 
