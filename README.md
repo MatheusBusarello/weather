@@ -75,7 +75,7 @@ Construção de uma aplicação web de previsão do tempo, com foco no front-end
 ## Deploy
 
 Deploy no Vercel. Link:
-https://machesterweather.vercel.app/
+[https://machesterweather.vercel.app/](https://weathermachester.vercel.app/)
 
 # Figma
 
