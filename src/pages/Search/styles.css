@@ -1,7 +1,7 @@
 .home {
   width: 100%;
   height: calc(100vh - 48px);
-  background-image: url("background.png");
+  background-image: url("../../assets/img/background.png");
   background-repeat: no-repeat;
 
   display: flex;
