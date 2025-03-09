@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # ManchesterWeather - Projeto front end
-=======
-# MchesterWeather - Projeto front end
->>>>>>> d775cc7 (exemplo .env)
 
 # Descrição do projeto
 
@@ -79,7 +75,7 @@ Construção de uma aplicação web de previsão do tempo, com foco no front-end
 ## Deploy
 
 Deploy no Vercel. Link:
-https://machesterweather.vercel.app/
+[https://machesterweather.vercel.app/](https://weathermachester.vercel.app/)
 
 # Figma
 
